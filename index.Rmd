@@ -126,14 +126,12 @@ class: left
 .pull-left[
 ## Pros
 
-- Has a solid infrastructure (IBM)
 
+- Has a solid infrastructure (IBM)
 
 - Many functions
 
-
 - Our faculty uses it
-
 
 - Knowledge of it is sometimes a demand in industry
 ]
@@ -162,7 +160,7 @@ class: left
 
 --
 
-<img src="./img/spss-2.png" width="80%" height="500px"/>
+<img src="./img/spss-2.png" width="80%" height="500px" class="center"/>
 
 ---
 class: center
@@ -265,7 +263,7 @@ mean(x)
 ```
 
 ---
-### Basic - Reading text
+### Basics - Analyzing text
 
 + It's easy to manipulate and work with **text**
 
@@ -604,7 +602,7 @@ class: inverse, center, middle
 ---
 ## TwitteR <img src="./img/twitter.png" width = "35px"/>
 
-### We can use the {Rtweet} package:
+### We can use the {rtweet} package:
 
 --
 
@@ -624,8 +622,7 @@ class: inverse, center, middle
 
 --
 
-- And more...
-
+- And more [here](https://rtweet.info/)...
 
 ---
 ## TwitteR <img src="./img/twitter.png" width = "35px"/>
@@ -781,13 +778,12 @@ hashtags <- elections %>%
 ggplot(data = hashtags, aes(x = Count, y = value))+
   geom_col(aes(fill = iscorona), show.legend = FALSE)+
   theme_classic()+
-  labs(y = NULL, x = "Count", title = "עשרים ההאשטגים הכי נפוצים",
-       subtitle = "תת כותרת בפונט אחר")+
+  labs(y = NULL, x = "Count", title = "20 most frequent hashtags")+
   scale_fill_manual(values = c(y = "dodgerblue4", n = "gray55"))+
   theme(text = element_text(family = "Calibri"),
         axis.text = element_text(size = 12),
         plot.title = element_text(family = "Calibri", hjust = 1, size = 20),
-        plot.subtitle = element_text(family = "Rod", hjust = 1, size = 14),
+        #plot.subtitle = element_text(family = "Rod", hjust = 1, size = 14),
         axis.ticks = element_blank(),
         axis.line.x = element_line(color = "gray85"),
         axis.line.y = element_blank())
@@ -830,7 +826,7 @@ ggraph(elec_bigram, layout = "fr")+
   geom_node_point(color = "lightblue", size = 3)+
   geom_node_text(aes(label = name), vjust = 1, hjust = 1, family = "Calibri")+
   theme_void()+
-  labs(title = "חמישים צמדי מילים הכי נפוצים מאוסף הציוצים")+
+  labs(title = "Top 50 Bigrams found in Twitter 'elections' tweets")+
   theme(text = element_text(family = "Calibri"),
         plot.title = element_text(hjust = 0.5 , face = "bold", size = 18))
 ```
