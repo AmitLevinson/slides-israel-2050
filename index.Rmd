@@ -778,14 +778,14 @@ hashtags <- elections %>%
 ggplot(data = hashtags, aes(x = Count, y = value))+
   geom_col(aes(fill = iscorona), show.legend = FALSE)+
   theme_classic()+
-  labs(y = NULL, x = "Count", title = "20 most frequent hashtags")+
-  scale_fill_manual(values = c(y = "dodgerblue4", n = "gray55"))+
+  labs(y = NULL, x = "Count", title = "Top 20 frequent hashtags")+
+  scale_fill_manual(values = c(y = "dodgerblue4", n = "gray70"))+
   theme(text = element_text(family = "Calibri"),
         axis.text = element_text(size = 12),
-        plot.title = element_text(family = "Calibri", hjust = 1, size = 20),
+        plot.title = element_text(family = "Calibri", hjust = 0, size = 20),
         #plot.subtitle = element_text(family = "Rod", hjust = 1, size = 14),
         axis.ticks = element_blank(),
-        axis.line.x = element_line(color = "gray85"),
+        axis.line.x = element_line(color = "gray95"),
         axis.line.y = element_blank())
 ```
 
