@@ -2,6 +2,9 @@
 .Rhistory
 .Rapp.history
 
+chat.txt
+images-to-group/
+
 # Session Data files
 .RData
 
