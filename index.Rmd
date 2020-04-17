@@ -513,8 +513,6 @@ htmltools::save_html(hc1, file = "hc1.html")
 
 --
 
-- Can catch the eye among many plots  
-
 - Use with caution
 
 --
