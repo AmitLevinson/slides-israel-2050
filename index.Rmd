@@ -453,6 +453,8 @@ htmltools::save_html(leaf_map, "lm.html")
 
 ## Interactive plots
 
+--
+
 Make interactive graphs with **{plotly}**
 
 
@@ -510,6 +512,12 @@ htmltools::save_html(hc1, file = "hc1.html")
 ## Animated plots
 
 --
+
+- Can catch the eye among many plots  
+
+- Use with caution
+
+--
 ```{r echo = TRUE}
 library(gganimate)
 ```
@@ -517,10 +525,6 @@ library(gganimate)
 ```{r include = FALSE}
 Sys.setlocale("LC_ALL", "Hebrew")
 ```
-
---
-
-Bonus: You can **export chat from *WhatsApp**:
 
 --
 
