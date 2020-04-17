@@ -374,11 +374,11 @@ class: title-slide, center, middle, inverse
 # you can do with R
 
 ---
-## Efficiency
+## Rmarkdown Efficiency
 
 --
 
-### We can use code output inline our text
+### We can use code output inline with our text
 
 --
 
@@ -421,6 +421,7 @@ ggplot(df, aes(long, lat))+
     plot.title = element_text(hjust = 0.5, family = "Roboto Condensed", size = 15))
 ```
 
+.footnote[.tiny[Data: USArrests]]
 ---
 
 ## Interactive maps
@@ -454,6 +455,8 @@ htmltools::save_html(leaf_map, "lm.html")
 
 Make interactive graphs with **{plotly}**
 
+
+.footnote[.tiny[Data: gapminder]]
 --
 
 ```{r echo = FALSE, eval = FALSE}
@@ -497,6 +500,9 @@ hc1 <- gapminder_filter %>%
 htmltools::save_html(hc1, file = "hc1.html")
 ```
 
+.footnote[.tiny[Data: gapminder]]
+--
+
 <iframe src="hc1.html" width="95%" height="500" id="igraph" scrolling="no" seamless="seamless" frameBorder="0"> </iframe>
 
 ---
@@ -523,6 +529,8 @@ chat_raw <- read_delim("chat.txt", delim = "-")
 head(chat_raw)
 ```
 
+
+.footnote[.tiny[Data: WhatsApp group]]
 
 --
 
@@ -592,9 +600,9 @@ g + transition_reveal(date)
 
 ---
 
-background-image: url(https://media.giphy.com/media/cF7QqO5DYdft6/giphy.gif)
+background-image: url(https://media.giphy.com/media/rVVFWyTINqG7C/giphy.gif)
 background-position: center
-background-size: contain, cover
+background-size: 100% 100%
 
 ---
 class: inverse, center, middle
