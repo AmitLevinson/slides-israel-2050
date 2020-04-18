@@ -25,7 +25,7 @@ background-size: 50%
 
 class: left, bottom, title-slide
 # Wrangling and Visualizing
-# Data with R
+# Data in R
 .left[
 `r icon::fa("twitter")` [.white[Amit_Levinson]](https://twitter.com/Amit_Levinson) <br>
 `r icon::fa("github")` [.white[Amit_Levinson]](https://github.com/AmitLevinson) <br>
