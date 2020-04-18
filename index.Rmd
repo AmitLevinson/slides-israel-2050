@@ -936,7 +936,7 @@ class: inverse, center, middle
 ---
 class: center, middle
 
-## And thanks to the many tutorials:
+## And thanks to the many {xaringan} tutorials:
 
 --
 
