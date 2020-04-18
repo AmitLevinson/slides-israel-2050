@@ -336,7 +336,7 @@ ggplot(countries, aes(x = death_rate_deaths_1000_population, y= unemployment_rat
 ---
 ### Basics - reports
 
-**Rmarkdown's** **reproducible** and **automated** work flow makes it really easy to work with reports and documents:
+**Rmarkdown's** **reproducible** and **automated** work flow makes it easy to work with reports and documents:
 
 .pull-left[
 For example this:
